@@ -6,7 +6,7 @@ import { findRelevantContent } from '@/lib/ai/embedding';
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
-export const google = createGoogleGenerativeAI({
+const google = createGoogleGenerativeAI({
     apiKey: process.env.GEMINI_API_KEY,
 });
 const model = google('gemini-2.0-flash', {});

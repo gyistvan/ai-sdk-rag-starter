@@ -4,9 +4,8 @@ import { useChat } from '@ai-sdk/react';
 
 export default function Chat() {
     const { messages, input, handleInputChange, handleSubmit } = useChat({
-        maxSteps: 3,
+        maxSteps: 5,
     });
-    console.log(messages);
     return (
         <div className='flex flex-col w-full max-w-md py-24 mx-auto stretch'>
             <div className='space-y-4'>
